@@ -36,8 +36,6 @@ export class PruebasservicesService {
     // const headers = new HttpHeaders().set('Authorization', `Bearer ${token}`);
     
     // Realizar la solicitud HTTP con el encabezado
-
-    
     return this.http.get<any>(`api/Incentivos/ruta-de-tu-api`);
   }
 }
