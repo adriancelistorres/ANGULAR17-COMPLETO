@@ -1,5 +1,6 @@
 import { Component } from '@angular/core';
 import { RouterOutlet } from '@angular/router';
+import { PruebasservicesService } from './pruebasservices.service';
 
 @Component({
   selector: 'app-root',
@@ -10,4 +11,11 @@ import { RouterOutlet } from '@angular/router';
 })
 export class AppComponent {
   title = 'pruebas';
+  
+
+  constructor( public PruebasservicesService : PruebasservicesService) { {
+    this.PruebasservicesService.setToken();
+  }
+
+}
 }
